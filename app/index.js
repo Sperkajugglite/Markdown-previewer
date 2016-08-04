@@ -1,12 +1,16 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
+var Previewer = require("previewer.js");
 
-var Previewer = React.createClass({
+var WholePreviewer = React.createClass({
   render: function() {
     return (
-      <h1 > Atutus</h1>
+      <div>
+      <h1 className="someClassName">Some React Header</h1>
+      <Previewer />
+      </div>
     )
   }
 });
 
-ReactDOM.render(<Previewer />, document.getElementById("app"))
+ReactDOM.render(<WholePreviewer />, document.getElementById("app"));
