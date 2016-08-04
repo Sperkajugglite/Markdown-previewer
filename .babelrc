@@ -1,5 +1,4 @@
 // Tell babel what to do
-
 {
   "presets": [
     "react"
