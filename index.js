@@ -1,7 +1,7 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
-var Previewer = require("./components/previewer");
-var Board = require("./components/board");
+var Previewer = require("./app/components/previewer");
+var Board = require("./app/components/board");
 
 var WholePreviewer = React.createClass({
   render: function() {
