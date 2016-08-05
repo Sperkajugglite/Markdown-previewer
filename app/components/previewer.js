@@ -3,7 +3,7 @@ var React = require("react");
 var Previewer = React.createClass({
   render: function() {
     return (
-      <h1>Some Previewer text </h1>
+      <div className="component">Some Previewer text </div>
     )
   }
 });

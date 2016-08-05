@@ -1,0 +1,23 @@
+$main-color: beige;
+$components-color: lightblue;
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  background-color: $main-color;
+  font-family: Avenir;
+  font-size: 62.5%;
+  #app {
+    width: 80%;
+    height: 50%;
+    .component {
+      width: 40%;
+      @include border-radius(5px);
+
+    }
+  }
+}

@@ -1,0 +1,15 @@
+body {
+  background-color: beige;
+  font-family: Avenir;
+  font-size: 62.5%; }
+  body #app {
+    width: 80%;
+    height: 50%; }
+    body #app .component {
+      width: 40%;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+
+/*# sourceMappingURL=styles.css.map */
