@@ -44,15 +44,16 @@ body {
       margin: 0;
       left: 0;
       padding: 2%;
-      resize: none;
-      font-size: 3em;
+      overflow: scroll;
       min-height: 100%;
-      outline: 0;
       background-color: $components-color;
       @include box-shadow(0, -10px, 10px, 0, black);
+      font-size: 3em;
     }
     #Board {
       border-right: solid black 2.5px;
+      outline: 0;
+      resize: none;
     }
     #Previewer {
       left: 50%;

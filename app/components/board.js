@@ -9,17 +9,17 @@ var Board = React.createClass({
   },
   handleChange: function(e) {
     this.setState({text: e.target.value});
+    console.log(this.state.text);
   },
   render: function() {
     return (
       <div>
         <textarea
           className="component"
-            id="Board"
-              onChange={this.handleChange}>
-              {this.state.text}
-        </textarea>
-        <Previewer>{this.state.text}</Previewer>
+          id="Board"
+          onChange={this.handleChange}
+          value={this.state.text}></textarea>
+        <Previewer text={this.state.text}></Previewer>
       </div>
     )
   }

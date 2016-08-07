@@ -1,10 +1,14 @@
 var React = require("react");
 
 var Previewer = React.createClass({
-  render: function() {
+  markup: function() {
     var md = new Remarkable();
+    var markup = md.render(this.props.text.toString());
+    return { __html: markup };
+  },
+  render: function() {
     return (
-      <textarea className="component" id="Previewer" readOnly>{md.render(this.props.children.toString())}</textarea>
+        <div className="component" id="Previewer" dangerouslySetInnerHTML={this.markup()}></div>
     )
   }
 });
