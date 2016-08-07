@@ -2,8 +2,9 @@ var React = require("react");
 
 var Previewer = React.createClass({
   render: function() {
+    var md = new Remarkable();
     return (
-      <div className="component">Some Previewer text </div>
+      <textarea className="component" id="Previewer" readOnly>{md.render(this.props.children.toString())}</textarea>
     )
   }
 });

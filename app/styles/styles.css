@@ -1,15 +1,50 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
 body {
   background-color: beige;
   font-family: Avenir;
   font-size: 62.5%; }
+  body h1 {
+    text-align: center;
+    font-size: 10em;
+    margin: 5% 0; }
   body #app {
+    position: relative;
     width: 80%;
-    height: 50%; }
+    min-height: 70%;
+    max-height: 80%;
+    margin: 0 auto;
+    background-color: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    border: solid black 5px;
+    border-bottom: solid #7C4916 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 5px 0 black;
+    -moz-box-shadow: 0 5px 5px 0 black;
+    box-shadow: 0 5px 5px 0 black; }
     body #app .component {
-      width: 40%;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -ms-border-radius: 5px;
-      border-radius: 5px; }
+      width: 50%;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      padding: 2%;
+      resize: none;
+      font-size: 3em;
+      min-height: 100%;
+      outline: 0;
+      background-color: white;
+      -webkit-box-shadow: 0 -10px 10px 0 black;
+      -moz-box-shadow: 0 -10px 10px 0 black;
+      box-shadow: 0 -10px 10px 0 black; }
+    body #app #Board {
+      border-right: solid black 2.5px; }
+    body #app #Previewer {
+      left: 50%;
+      border-left: solid black 2.5px; }
 
 /*# sourceMappingURL=styles.css.map */
