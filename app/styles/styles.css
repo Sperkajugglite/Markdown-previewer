@@ -3,13 +3,13 @@ body, html {
   height: 100%; }
 
 body {
-  background-color: beige;
-  font-family: Avenir;
+  background-color: #e67a27;
+  background-image: url("./images/brick-wall-dark.png");
   font-size: 62.5%; }
   body h1 {
     text-align: center;
     font-size: 10em;
-    margin: 5% 0; }
+    margin: 0 0 5% 0; }
   body #app {
     position: relative;
     width: 80%;
@@ -22,7 +22,7 @@ body {
     -ms-border-radius: 5px;
     border-radius: 5px;
     border: solid black 5px;
-    border-bottom: solid #7C4916 15px;
+    border-bottom: solid #7C4916 20px;
     overflow: hidden;
     -webkit-box-shadow: 0 5px 5px 0 black;
     -moz-box-shadow: 0 5px 5px 0 black;
@@ -36,10 +36,9 @@ body {
       overflow: scroll;
       min-height: 100%;
       background-color: white;
-      -webkit-box-shadow: 0 -10px 10px 0 black;
-      -moz-box-shadow: 0 -10px 10px 0 black;
-      box-shadow: 0 -10px 10px 0 black;
-      font-size: 3em; }
+      font-size: 3em;
+      background-image: url("./images/dust.png");
+      /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
     body #app #Board {
       border-right: solid black 2.5px;
       outline: 0;

@@ -1,5 +1,6 @@
-$main-color: beige;
+$main-color: #e67a27;
 $components-color: white;
+$wood-color: #7C4916;
 @mixin border-radius($radius) {
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
@@ -19,12 +20,12 @@ body, html {
 
 body {
   background-color: $main-color;
-  font-family: Avenir;
+  background-image: url("./images/brick-wall-dark.png");
   font-size: 62.5%;
   h1 {
     text-align: center;
     font-size: 10em;
-    margin: 5% 0;
+    margin: 0 0 5% 0;
   }
   #app {
     position: relative;
@@ -35,7 +36,7 @@ body {
     background-color: none;
     @include border-radius(5px);
     border: solid black 5px;
-    border-bottom: solid #7C4916 15px;
+    border-bottom: solid $wood-color 20px;
     overflow: hidden;
     @include box-shadow(0, 5px, 5px, 0, black);
     .component {
@@ -47,8 +48,10 @@ body {
       overflow: scroll;
       min-height: 100%;
       background-color: $components-color;
-      @include box-shadow(0, -10px, 10px, 0, black);
       font-size: 3em;
+      background-image: url("./images/dust.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
     }
     #Board {
       border-right: solid black 2.5px;
